@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<region 
+  xmlns="http://neuroinformatics.nl/AtlasML"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://neuroinformatics.nl/AtlasML http://neuroinformatics.nl/HBP/where-in-the-brain/prototype/genericAtlas.xsd">V1</region>

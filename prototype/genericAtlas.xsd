@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xs:schema 
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://neuroinformatics.nl/AtlasML"
+  targetNamespace="http://neuroinformatics.nl/AtlasML"
+  elementFormDefault="qualified">
+
+<!-- define generic types without any restrictions -->
+<xs:complexType name="region_type">
+  <xs:simpleContent>
+    <xs:extension base="xs:string">
+    </xs:extension>
+  </xs:simpleContent>
+</xs:complexType>
+
+<!-- define an element for test purposes -->
+<xs:element name="region" type="region_type"/>
+
+</xs:schema>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<UserDocument
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.w3schools.com note.xsd">  
+  xmlns="http://www.neuroinformatics.nl"
+  xmlns:atlas="specificAtlas.xsd"
+  targetNamespace="http://www.neuroinformatics.nl"
+>
+  <MeasurementWithProperties>
+    <atlas:region>V2</atlas:region>
+    <atlas:coord>[0.3, 0.7, 0.5]</atlas:coord>
+  </MeasurementWithProperties>
+  <MeasurementWithAttributes atlas:region="V2" atlas:coord="[0.3,0.7,0.5]"/>
+</UserDocument>
