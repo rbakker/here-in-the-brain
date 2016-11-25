@@ -1,16 +1,17 @@
 <?xml version="1.0"?>
-<xs:schema 
+<xs:schema
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns="http://www.neuroinformatics.nl"
-  targetNamespace="http://www.neuroinformatics.nl"
+  xmlns:atlas="http://neuroinformatics.nl/AtlasML"
+  xmlns="http://userdomain.com"
+  targetNamespace="http://userdomain.com"
   elementFormDefault="qualified">
 
-<xs:import namespace="atlas" schemaLocation="genericAtlas.xsd" />
+<xs:import namespace="http://neuroinformatics.nl/AtlasML" schemaLocation="http://neuroinformatics.nl/HBP/where-in-the-brain/prototype/genericAtlas.xsd" />
 
 <xs:complexType name="Measurement_type">
   <xs:simpleContent>
     <xs:extension base="xs:string">
-      <xs:attribute name="atlas:region" type="atlas:region_type"/>
+      <xs:attribute ref="atlas:region"/>
     </xs:extension>
   </xs:simpleContent>
 </xs:complexType>
@@ -18,7 +19,7 @@
 <xs:element name='UserDocument'>
   <xs:complexType>
     <xs:sequence>
-      <xs:element name='Measurement' type='Measurement_type'/>
+      <xs:element name='Measurement' type='Measurement_type' minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
 </xs:element>

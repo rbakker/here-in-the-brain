@@ -8,6 +8,8 @@
 <!-- define generic types without any restrictions -->
 <xs:simpleType name="region_type">
   <xs:restriction base="xs:string">
+    <xs:enumeration value="area A"/>
+    <xs:enumeration value="area B"/>
   </xs:restriction>
 </xs:simpleType>
 
