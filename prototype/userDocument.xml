@@ -6,6 +6,7 @@
   xmlns:atlas="http://incf.org/atlasing/location"
 >
 
+<!-- area A is a valid region -->
 <Measurement atlas:region="area A"/>
 
 </UserDocument>
