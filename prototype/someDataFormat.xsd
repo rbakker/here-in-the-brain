@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:atlas="http://incf.org/atlasing/location"
+  xmlns="http://somedataformat.com"
+  targetNamespace="http://somedataformat.com"
+  elementFormDefault="qualified">
+
+<xs:import namespace="http://incf.org/atlasing/location" schemaLocation="https://rbakker.github.io/where-in-the-brain/demo/genericAtlas.xsd"/>
+
+<xs:complexType name="Measurement_type">
+  <xs:simpleContent>
+    <xs:extension base="xs:string">
+      <xs:attribute ref="atlas:region"/>
+    </xs:extension>
+  </xs:simpleContent>
+</xs:complexType>
+
+<xs:element name='UserDocument'>
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name='Measurement' type='Measurement_type' minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
