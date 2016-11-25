@@ -6,7 +6,7 @@
   targetNamespace="http://somedataformat.com"
   elementFormDefault="qualified">
 
-<xs:import namespace="http://incf.org/atlasing/location" schemaLocation="https://rbakker.github.io/where-in-the-brain/demo/genericAtlas.xsd"/>
+<xs:import namespace="http://incf.org/atlasing/location" schemaLocation="https://rbakker.github.io/where-in-the-brain/prototype/genericAtlas.xsd"/>
 
 <!-- permit Measurement to have an attribute 'atlas:region' -->
 <xs:complexType name="Measurement_type">
