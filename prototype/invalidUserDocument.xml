@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
 <UserDocument
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://somedataformat.com https://rbakker.github.io/where-in-the-brain/demo/someDataFormat.xsd http://incf.org/atlasing/location https://rbakker.github.io/where-in-the-brain/demo/specificAtlas.xsd"
+  xsi:schemaLocation="http://somedataformat.com https://rbakker.github.io/where-in-the-brain/demo/someNeuroscienceDataFormat.xsd http://incf.org/atlasing/location https://rbakker.github.io/where-in-the-brain/demo/specificAtlas.xsd"
   xmlns="http://somedataformat.com"
   xmlns:atlas="http://incf.org/atlasing/location"
 >
 
+<!-- example of an invalid document: 'area C' is not allowed in 'myFavoriteAtlas.xsd' -->
 <Measurement atlas:region="area C"/>
 
 </UserDocument>
