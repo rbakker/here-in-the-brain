@@ -6,6 +6,6 @@
   xmlns:atlas="http://incf.org/atlasing/location"
 >
 
-<Measurement atlas:region="area A"/>
+<Measurement atlas:region="area C"/>
 
 </UserDocument>

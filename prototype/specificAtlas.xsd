@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <xs:schema 
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns="http://neuroinformatics.nl/AtlasML"
-  targetNamespace="http://neuroinformatics.nl/AtlasML"
+  xmlns="http://incf.org/atlasing/location"
+  targetNamespace="http://incf.org/atlasing/location"
   elementFormDefault="qualified">
 
 <!-- define generic types without any restrictions -->

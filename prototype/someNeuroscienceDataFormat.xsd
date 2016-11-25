@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <xs:schema
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns:atlas="http://neuroinformatics.nl/AtlasML"
-  xmlns="http://userdomain.com"
-  targetNamespace="http://userdomain.com"
+  xmlns:atlas="http://incf.org/atlasing/location"
+  xmlns="http://somedataformat.com"
+  targetNamespace="http://somedataformat.com"
   elementFormDefault="qualified">
 
-<xs:import namespace="http://neuroinformatics.nl/AtlasML" schemaLocation="http://neuroinformatics.nl/HBP/where-in-the-brain/prototype/genericAtlas.xsd" />
+<xs:import namespace="http://incf.org/atlasing/location" schemaLocation="http://neuroinformatics.nl/HBP/where-in-the-brain/prototype/genericAtlas.xsd" />
 
 <xs:complexType name="Measurement_type">
   <xs:simpleContent>
