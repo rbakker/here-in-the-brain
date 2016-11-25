@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<xs:schema 
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://incf.org/atlasing/location"
+  targetNamespace="http://incf.org/atlasing/location"
+  elementFormDefault="qualified">
+
+<!-- define generic types without any restrictions -->
+<xs:simpleType name="region_type">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="area A"/>
+    <xs:enumeration value="area B"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<!-- define the 'region' attribute -->
+<xs:attribute name="region" type="region_type"/>
+
+<!-- define an element for test purposes -->
+<xs:element name="test" type="region_type"/>
+
+</xs:schema>
