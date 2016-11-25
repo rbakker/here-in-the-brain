@@ -1,11 +1,12 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <UserDocument
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://incf.org/atlasing/location http://neuroinformatics.nl/HBP/where-in-the-brain/prototype/userDocument.xsd http://neuroinformatics.nl/AtlasML http://neuroinformatics.nl/HBP/where-in-the-brain/prototype/specificAtlas.xsd"
+  xsi:schemaLocation="http://somedataformat.com https://rbakker.github.io/where-in-the-brain/prototype/someNeuroscienceDataFormat.xsd http://incf.org/atlasing/location https://rbakker.github.io/where-in-the-brain/prototype/myFavoriteAtlas.xsd"
   xmlns="http://somedataformat.com"
   xmlns:atlas="http://incf.org/atlasing/location"
 >
 
+<!-- area A is a valid region -->
 <Measurement atlas:region="area A"/>
 
 </UserDocument>

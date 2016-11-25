@@ -6,8 +6,9 @@
   targetNamespace="http://somedataformat.com"
   elementFormDefault="qualified">
 
-<xs:import namespace="http://incf.org/atlasing/location" schemaLocation="http://neuroinformatics.nl/HBP/where-in-the-brain/prototype/genericAtlas.xsd" />
+<xs:import namespace="http://incf.org/atlasing/location" schemaLocation="https://rbakker.github.io/where-in-the-brain/prototype/genericAtlas.xsd"/>
 
+<!-- permit Measurement to have an attribute 'atlas:region' -->
 <xs:complexType name="Measurement_type">
   <xs:simpleContent>
     <xs:extension base="xs:string">
@@ -16,6 +17,7 @@
   </xs:simpleContent>
 </xs:complexType>
 
+<!-- permit UserDocument to have one or more elements 'Measurement' -->
 <xs:element name='UserDocument'>
   <xs:complexType>
     <xs:sequence>
